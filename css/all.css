@@ -1,0 +1,479 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+
+/*以下為我寫的內容*/
+
+.wrap {
+    width: 900px;
+    margin: 0 auto;
+}
+
+
+
+/*clearfix 固定放置*/
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+    /*For IE 6&7 only*/
+}
+
+
+
+/*bar 區塊*/
+
+.bar {
+    background: #f6f6f6;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.bar ul {
+    float: right;
+}
+
+.bar li {
+    float: left;
+    margin: 5px;
+}
+
+.bar img {
+    margin-right: 5px;
+    float: left;
+}
+
+.bar a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.bar span {
+    float: left;
+}
+
+.facebook {
+    color: #4460a0;
+    border-right: 1px solid #cccccc;
+    padding-right: 8px;
+}
+
+
+
+
+/*menu區塊*/
+
+.menu h1 a {
+    float: left;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    margin-top: 5px;
+    width: 178px;
+    height: 36px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    display:block;
+}
+
+.menu>ul {
+    float: right;
+}
+
+.menu>ul>li {
+    float: left;
+}
+
+.menu li a {
+    padding-top: 10px;
+    margin-left: 30px;
+    text-decoration: none;
+    color: #0ED0A0;
+    display: block;
+}
+
+.menu li a:hover {
+    padding-bottom: 5px;
+    border-bottom: 5px solid #0ED0A0;
+}
+
+.menu ul li ul {
+    display: none;
+}
+
+
+
+.active {
+    color: white !important;
+    background-color: #0ED0A0;
+    padding-bottom: 5px; 
+
+}
+
+
+/*banner 區塊*/
+
+/*.banner {
+    position: relative;
+    margin-top: 20px;
+    background-image: url(../images/Banner_02.png);
+    display: block;
+    height: 300px;
+    background-position: 100% -85px;
+}*/
+.banner{
+    margin-top: 20px;
+}
+/*.banner-content {
+    position: absolute;
+    top: 80px;
+    height: 120px;
+    width: 880px;
+    background-color: rgba(12, 12, 12, 0.5);
+    背景不蓋過字語法
+    padding-top: 20px;
+    padding-left: 20px;
+}*/
+
+/*.banner-content h2,
+.banner-content span {
+    color: white;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+*/
+
+
+
+
+
+/*content 區塊*/
+
+.feature {
+    margin-top:10px;
+    margin-left: 20px;
+}
+
+.feature .col-4 {
+    float: left;
+
+    text-align: center;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin: 0px 5px;
+    box-shadow: 0px 3px 1px gray;
+}
+
+.col-4 {
+    width: 31.333333%;
+    height: 370px;
+}
+
+
+.col-4 img {
+    margin-top: 15px;
+}
+
+.col-4 .rwd {
+    width: 100%;
+}
+
+.col-4-content {
+
+    margin-top: 50px;
+}
+
+
+.col-4-content p {
+    padding: 9px;
+    text-align: justify;
+    margin-top: 3px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+/*差異欄位\*/
+
+.difference {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.difference h2 {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.diff {
+    margin: 0 30px;
+    width: 820px;
+}
+
+.diff th,
+.diff td {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    text-align: left;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    padding-left: 15px;
+}
+
+.diff th {
+    background: #E3E3E3;
+}
+
+
+.notify {
+    color: #0ED0A0;
+}
+
+
+
+/*留下資料區*/
+
+.call2action {
+
+
+    background: linear-gradient(#00644b, #009771);
+    margin-bottom: 30px;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 35%;
+}
+
+.call2action h2 {
+
+    font-size: 22px;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+}
+
+.call2action li {
+    margin-bottom: 10px;
+}
+
+textarea {
+    margin-top: 40px;
+    margin-left: 22px;
+    float: left;
+}
+
+
+.contact {
+    float: right;
+    margin-top: 40px;
+    margin-right: 22px;
+    color: white;
+}
+
+.c2button {
+    float: right;
+    margin-top: 20px;
+    color: white;
+    background-color: #0ED0A0;
+    font-size: 20px;
+    padding: 5px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.c2button:hover {
+    font-size: 28px;
+    background: #0EE7EE;
+}
+
+br {
+    line-height: 1.5;
+}
+
+
+
+/*footer 栏位*/
+
+.footer {
+    margin-bottom: 10px;
+}
+
+.footer img {
+    margin-top: 5px;
+    float: left;
+}
+
+.footer ul {
+    float: right;
+}
+
+.footer ul li {
+    margin-bottom: 5px;
+}
+
+.pink {
+    color: #ed98b9;
+}
+
+.top{
+    position: fixed;
+    bottom: 10px;
+    right: 0px;
+}
+
+.top img{
+    width: 30%;
+}
